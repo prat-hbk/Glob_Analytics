@@ -79,6 +79,7 @@ choropleth_topics <- function(file_string, colors = "Greens") {
 
 }
 
-# pol <- read.csv("Visualization/csv/geo_politic.csv",head=TRUE,sep=",")
+
+#  pol <- read.csv("Visualization/csv/geo_politic.csv",head=TRUE,sep=",")
 # quantile(pol$score)
->>>>>>> Choropleth bug fixed and some file location changed in plottng tweets| need more adjustment in data feeded for Chloropleth
+
