@@ -1,3 +1,4 @@
+#install the follwoing packages as per the command-- "install.packages('')".
 #install dplyr from cran .. if problem persists update r-base-core to >= v3.1.0
 #install ggplot2 from cran package, reshape2 will be installed with ggplot2.
 library(dplyr)
