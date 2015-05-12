@@ -14,7 +14,11 @@ library(leaflet)
 density_plot_topic <- function(file_string){
  
  argument_frame = data.frame( match = c("economy", "religion", "politics", "tourism", "overall"),
-                  files = c("csv/geo_economy.csv", "csv/geo_religion.csv", "csv/geo_politic.csv", "csv/geo_tourism.csv", "csv/world_tweets.csv")
+                  files = c("Visualization/csv/geo_economy.csv", 
+                            "Visualization/csv/geo_religion.csv", 
+                            "Visualization/csv/geo_politic.csv", 
+                            "Visualization/csv/geo_tourism.csv", 
+                            "Visualization/csv/world_tweets.csv")
  )
   
  call_file <- ""
@@ -33,11 +37,11 @@ density_plot_topic <- function(file_string){
  )
 
  # dataframe for the radius assignment to the countries as per the tweets.
- maxsize <- 15000
- radii.df = data.frame( breaks = c(20, 50, 100, 500, 1000, 2000, 4000, 8000, maxsize), 
+ maxsize <- 40000
+ radii.df = data.frame( breaks = c(20, 50, 100, 1000, 2000, 4000, 8000, 15000, maxsize), 
  #                      color = c("darkblue", "lightseagreen", "green", 
  #                                "lightblue", "purple", "orange", "red","darkred","blue"),
-                      radius = c(5, 10, 15, 20, 25, 30, 35, 40, 45)
+                      radius = c(5, 10, 15, 20, 25, 30, 35, 40, 50)
  )
 
  # loop code for the assignment of radius column to the data frame
